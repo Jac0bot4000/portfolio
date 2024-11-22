@@ -57,11 +57,11 @@ header > #heroText {
 }
 
 
-#backgroundGradient {
+/* #backgroundGradient {
     width: 70vw;
     height: 100vh;
     background-image: linear-gradient(to right, #00000090, #00000000);
-}
+} */
 
 
 a {
