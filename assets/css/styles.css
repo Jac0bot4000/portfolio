@@ -1,8 +1,9 @@
 :root {
     --black: #383838;
     --white: #FEFFFD;
-    --background: #060d2e;
-    --translucentBlue: rgba(0,0,0, 0.3);
+    --background: rgb(6, 13, 46);
+    --translucentBlue30: rgba(6, 13, 46, 0.3);
+    --translucentBlue60: rgba(6, 13, 46, 0.6);
 }
 
 .center {
@@ -11,7 +12,7 @@
     justify-content: center;
 }
 
-body{
+body {
     background-color: var(--background);
     font-family: Arial, Helvetica, sans-serif;
     margin: 0 100px;
@@ -22,7 +23,7 @@ header {
     min-width: 100%;
     min-height: 100vh;
     grid-template-columns: 20% 60% 20%;
-    grid-template-rows: 20% auto 30%;
+    grid-template-rows: 25% auto 25%;
 }
 
 nav {
@@ -33,7 +34,7 @@ nav {
     z-index: 9999;
     width: 100vw;
     padding: 12px 0;
-    background-color: var(--translucentBlue);
+    background-color: var(--translucentBlue30);
     backdrop-filter: blur(4px);
 }
 
@@ -53,6 +54,12 @@ nav a{
     color:var(--white);
     font-weight: 100;
     text-decoration: none;
+    padding: 8px;
+}
+
+nav a:hover{
+    background-color:#1c3963;
+    border-radius: 12px;
 }
 
 ul,
@@ -96,7 +103,7 @@ header > #heroText {
     z-index: 2;
     align-content: center;
     text-align: center;
-    background-color: rgba(0,0,0, 0.3);
+    background-color: var(--translucentBlue60);
     backdrop-filter: blur(4px);
     border-radius: 12px;
 
@@ -133,6 +140,7 @@ button:hover{
 .sectionSummary {
     display: grid;
     grid-template-columns: 70% 30%;
+    grid-template-rows: 6rem auto;
     grid-template-areas:
         "head head"
         "description button";
@@ -179,3 +187,28 @@ footer {
     left: 0;
 }
 
+#myBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: 2px solid white; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: var(--translucentBlue60); /* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 100%; /* Rounded corners */
+    font-size: 18px; /* Increase font size */
+    width: 5em;
+    height: 5em;
+  }
+  
+  #myBtn:hover {
+    background-color: #1c3963; /* Add a dark-grey background on hover */
+  }
+
+  #myBtn img {
+    transform: rotate(-90deg);
+  }
