@@ -25,6 +25,50 @@ header {
     grid-template-rows: 20% auto 30%;
 }
 
+nav {
+    position: fixed;
+    top:0;
+    left:0;
+
+    z-index: 9999;
+    width: 100vw;
+    padding: 12px 0;
+    background-color: var(--translucentBlue);
+    backdrop-filter: blur(4px);
+}
+
+nav ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    justify-content: center;
+    gap: 75px;
+    list-style: none;
+    width: 100%;
+}
+
+nav a{
+    font-size: 24px;
+    color:var(--white);
+    font-weight: 100;
+    text-decoration: none;
+}
+
+ul,
+li {
+    padding: 0;
+    margin: 0;
+}
+
+.horiz-nav {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    justify-content: space-between;
+    list-style: none;
+}
+
 h1 {
     font-size: 4rem;
     color: var(--white);
@@ -65,20 +109,6 @@ header > #heroText {
     object-fit: cover;
     position: absolute;
     left: 0;
-}
-
-
-/* #backgroundGradient {
-    width: 70vw;
-    height: 100vh;
-    background-image: linear-gradient(to right, #00000090, #00000000);
-} */
-
-
-a {
-    height: 100px;
-    width: 1rem;
-    font-size: 3em;
 }
 
 button {
@@ -148,3 +178,4 @@ footer {
     position: absolute;
     left: 0;
 }
+
