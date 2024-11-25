@@ -53,7 +53,7 @@ header > #heroText {
     text-align: center;
     background-color: rgba(0,0,0, 0.3);
     backdrop-filter: blur(4px);
-    border-radius: 20px;
+    border-radius: 12px;
 
     padding: 10px 20px;
 }
@@ -84,13 +84,14 @@ button {
     height: 3rem;
     width: 100%;
     font-size: 2rem;
-    border-radius: 20px;
+    border-radius: 12px;
     background-color: var(--black);
     color: var(--white);
     background-color: rgba(0,0,0, 0.2);
     backdrop-filter: blur(4px);
     outline: none;
     border-style: none;
+    padding: 20px;
 }
 
 button:hover{
@@ -112,13 +113,14 @@ button:hover{
 
 .sectionSummary p {
     grid-area: description;
+    line-height: 1.5;
 }
 
-.sectionSummary button, .sectionSummary a {
+.sectionSummary a {
     grid-area: button;
     justify-self: center;
-    width: 80%;
-    height: 80%;
+    width: 90%;
+    height: fit-content;
     text-decoration: none;
 }
 
@@ -126,6 +128,8 @@ button:hover{
     display: flex;
     flex-direction: column;
     row-gap: 10px;
+    width: 90%;
+    height: fit-content;
 }
 
 button img {
